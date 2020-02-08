@@ -1,18 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
+    <Button
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        android:text="1"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/button1"
+        android:layout_alignBottom="@id/button1"
+        android:layout_centerHorizontal="true"
+        android:text="2"/>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/button2"
+        android:layout_marginEnd="25dp"
+        android:text="3"/>
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/button1"
+        android:layout_below="@id/button1"
+        android:layout_marginTop="20dp"
+        android:text="4"/>
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/button2"
+        android:layout_alignTop="@id/button4"
+        android:text="5"/>
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/button3"
+        android:layout_alignTop="@id/button5"
+        android:text="6"/>
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_below="@id/button4"
+        android:layout_alignStart="@id/button4"
+        android:text="7"/>
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/button5"
+        android:layout_alignTop="@id/button7"
+        android:text="8"/>
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/button6"
+        android:layout_alignTop="@id/button8"
+        android:text="9"/>
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/button8"
+        android:layout_below="@id/button8"
+        android:layout_marginTop="28dp"
+        android:text="0"/>
+</RelativeLayout>
+<!-- relative to the screen_________
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+  android:layout_alignParentBottom
+  android:layout_alignParentStart
+  android:layout_alignParentEnd
+  android:layout_alignParentTop
+  android:layout_centerHorizontal
+  android:layout_centerInParent
+  android:layout_centerVertical
+  ______________________________
+  relative to other elements-
+    android:layout_above
+    android:layout_below​​
+    android:layout_toStartOf
+    android:layout_toEndOf
+    android:layout_alignBaseline
+    android:layout_alignBottom
+    android:layout_alignStart
+    android:layout_alignEnd
+    android:layout_alignTop
+    android:layout_marginStar
+    android:layout_marginEnd​​
+    android:layout_marginTop
+    android:layout_marginBottom
+       -->
